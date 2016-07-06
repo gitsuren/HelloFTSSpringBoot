@@ -56,7 +56,7 @@
 	<bean id="ftsRestTemplate" class="org.springframework.web.client.RestTemplate">
 	</bean>
 
-	<bean id="ftsRepository"
+	<!-- <bean id="ftsRepository"
 		class="com.suru.featuretoggle.service.FeaturesByIDRepository">
 		<constructor-arg index="0"
 			value="${fts.url}" />
@@ -71,5 +71,5 @@
 				<constructor-arg index="1" value="1" />
 			</bean>
 		</constructor-arg>
-	</bean>
+	</bean> -->
 </beans>

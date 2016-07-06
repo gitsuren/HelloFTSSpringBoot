@@ -7,25 +7,37 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestOperations;
 
-import com.suru.featuretoggle.service.FeatureService;
-import com.suru.featuretoggle.service.FeaturesByIDRepository;
-import com.suru.featuretoggle.service.cache.GuavaCacheStrategy;
+//import com.suru.featuretoggle.service.FeatureService;
+//import com.suru.featuretoggle.service.FeaturesByIDRepository;
+//import com.suru.featuretoggle.service.cache.GuavaCacheStrategy;
 
 @RestController
 
 public class HelloController {
 
-	@Autowired
-	private FeatureService featureService;
+//	@Autowired
+//	private FeatureService featureService;
 
-	@RequestMapping("/hello")
-	public String hello(@RequestParam("name") String name) {
+	@RequestMapping("/surendra")
+	public String surendra(@RequestParam("name") String name) {
 
-		if (featureService.hasAccess(name, "TEST_FEATURE")) {
-			return "Hola!!! - U have access to this feature ";
-		} else {
-			return ":( - U do not have access";
-		}
+//		if (featureService.hasAccess(name, "TEST_FEATURE")) {
+//			return "Hola!!! - U have access to this feature ";
+//		} else {
+//			return ":( - U do not have access";
+//		}
+		return "Surendra";
+	}
+	
+	@RequestMapping("/sujata")
+	public String sujata(@RequestParam("name") String name) {
+
+//		if (featureService.hasAccess(name, "TEST123")) {
+//			return "Hola!!! - U have access to this feature ";
+//		} else {
+//			return ":( - U do not have access";
+//		}
+		return "Sujata";
 	}
 
 }
